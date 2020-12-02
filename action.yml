@@ -1,0 +1,7 @@
+name: hello world
+description: Says hello
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/sub/sayhello.ps1
+      shell: pwsh
